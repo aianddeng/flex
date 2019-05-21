@@ -3,7 +3,7 @@
         <div>
             <router-link to="/case">&lt;--实例演示</router-link>
         </div>
-        <h1>flex属性测试</h1>
+        <h1><router-link to="/">flex属性测试</router-link></h1>
         <div>
             <router-link to="/doc">文档查询--&gt;</router-link>
         </div>
@@ -34,6 +34,9 @@ header{
         overflow: hidden;
         order: -1;
         width: 100%;
+        a{
+            color: #2c3e50;
+        }
     }
     div{
         display: flex;
@@ -43,6 +46,7 @@ header{
             color: initial;
             font-size: 22px;
             padding: 20px;
+            will-change: letter-spacing;
         }
     }
     @media (min-width:768px) {

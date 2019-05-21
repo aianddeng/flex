@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header/>
-    <router-view/>
+    <transition name="rou"> 
+        <router-view/>
+    </transition>
     <Footer/>
   </div>
 </template>
@@ -14,7 +16,7 @@ export default {
   components: {
       Footer,
       Header,
-  }
+  },
 }
 </script>
 
@@ -52,5 +54,12 @@ a{
         transform: scaleX(0);
         transition: all .5s ease-in-out;
     }
+}
+.rou-enter-active, .rou-leave-active {
+  transition: all .5s;
+}
+.rou-enter, .rou-leave-to{
+opacity: 0;
+transform: scale(.85,.85);
 }
 </style>

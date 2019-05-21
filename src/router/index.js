@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Show from '@/components/Show'
+import Doc from '@/components/Doc'
+import Case from '@/components/Case'
 
 Vue.use(Router)
 
@@ -15,12 +17,12 @@ export default new Router({
         {
             path: '/doc',
             name: 'doc',
-            component: Show
+            component: Doc
         },
         {
             path: '/case',
             name: 'case',
-            component: Show
+            component: Case
         }
     ]
 })
