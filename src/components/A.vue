@@ -1,4 +1,5 @@
 <template>
+A.vue
     <div class="show">
         <ul>
             <li>1</li>
